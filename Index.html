@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Directory</h1>
+
+        <!-- Section 1: Branch List -->
+        <div id="branch-section">
+            <h2>Select a Branch</h2>
+            <div id="branchCards" class="card-container"></div>
+        </div>
+
+        <!-- Section 2: Employee List -->
+        <div id="employee-section" class="hidden">
+            <h2>Employees in <span id="branch-name"></span></h2>
+            <div id="employees" class="card-container"></div>
+            <button onclick="backToBranches()" class="nav-button">Back to Branches</button>
+        </div>
+
+        <!-- Section 3: Employee Details -->
+        <div id="employee-details-section" class="hidden">
+            <h2>Employee Details</h2>
+            <div id="details" class="business-card"></div>
+            <button onclick="backToEmployees()" class="nav-button">Back to Employees</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
